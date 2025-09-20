@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Reader’s Haven</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    body { font-family: Arial, sans-serif; }
+
+    /* Top Header */
+    .top-header { background: #6a1b9a; color: white; padding: 10px 0; text-align: center; }
+
+    /* Hero Carousel */
+    .carousel-inner img { height: 400px; object-fit: cover; }
+
+    /* Section styling */
+    .section { padding: 60px 20px; }
+    .section-title { color: #6a1b9a; margin-bottom: 40px; text-align: center; }
+
+    /* Genre card hover effect */
+    .card:hover { transform: scale(1.05); transition: 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+
+    /* Gradient backgrounds */
+    #about { background: linear-gradient(135deg, #f3e5f5, #ffffff); }
+    #notices { background: linear-gradient(135deg, #fff8e1, #ffffff); }
+
+    /* Footer */
+    .footer { background: #4a148c; color: #ddd; padding: 20px; text-align: center; }
+
+    /* Gallery images */
+    .gallery-img { border-radius: 10px; transition: 0.3s; }
+    .gallery-img:hover { transform: scale(1.05); }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header class="top-header">
+    <h4>The Reader’s Haven</h4>
+    <p>Explore, Discover, and Fall in Love with Books</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Reader’s Haven</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#genres">Genres</a></li>
+          <li class="nav-item"><a class="nav-link" href="#notices">Notices</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Carousel -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/1600/400?random=10" class="d-block w-100" alt="Books">
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1600/400?random=11" class="d-block w-100" alt="Reading">
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1600/400?random=12" class="d-block w-100" alt="Library">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container text-center">
+      <h2 class="section-title">About Us</h2>
+      <p>The Reader’s Haven is a sanctuary for book lovers. We provide a wide variety of genres, reading sessions, and community events to encourage a lifelong love of reading.</p>
+    </div>
+  </section>
+
+  <!-- Genres Section -->
+  <section id="genres" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Genres</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="https://picsum.photos/400/300?random=13" class="card-img-top" alt="Fiction">
+            <div class="card-body">
+              <h5 class="card-title">Fiction</h5>
+              <p class="card-text">Dive into imaginative worlds, storytelling, and creative writing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="https://picsum.photos/400/300?random=14" class="card-img-top" alt="Non-Fiction">
+            <div class="card-body">
+              <h5 class="card-title">Non-Fiction</h5>
+              <p class="card-text">Learn from biographies, history, and real-world knowledge.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="https://picsum.photos/400/300?random=15" class="card-img-top" alt="Science & Tech">
+            <div class="card-body">
+              <h5 class="card-title">Science & Tech</h5>
+              <p class="card-text">Explore the wonders of technology, innovation, and research.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notices Section -->
+  <section id="notices" class="section">
+    <div class="container">
+      <h2 class="section-title text-center">Notices</h2>
+      <ul class="list-group">
+        <li class="list-group-item">New arrivals of bestsellers this week!</li>
+        <li class="list-group-item">Reading session: 25th Sept at 4 PM</li>
+        <li class="list-group-item">Book donation drive starting 1st Oct.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section bg-light">
+    <div class="container text-center">
+      <h2 class="section-title">Gallery</h2>
+      <div class="row g-3">
+        <div class="col-md-4"><img src="https://picsum.photos/400/300?random=16" class="img-fluid gallery-img shadow" alt="Books"></div>
+        <div class="col-md-4"><img src="https://picsum.photos/400/300?random=17" class="img-fluid gallery-img shadow" alt="Reading"></div>
+        <div class="col-md-4"><img src="https://picsum.photos/400/300?random=18" class="img-fluid gallery-img shadow" alt="Library"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title text-center">Contact Us</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-primary btn-lg">Send</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© <span id="year"></span> The Reader’s Haven | Designed by Me</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
